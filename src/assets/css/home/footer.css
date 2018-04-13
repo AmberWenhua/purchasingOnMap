@@ -33,5 +33,9 @@
     background: url(../../images/footer-nav/bottom_nor_icon01@2x.png) center no-repeat;
     background-size: 22px
 }
+.footer-nav .icon-footer-click1 {
+    background: url(../../images/footer-nav/bottom_press_icon04@2x.png) center no-repeat;
+    background-size: 22px
+}
 
 

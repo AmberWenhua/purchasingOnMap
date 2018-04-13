@@ -4,6 +4,7 @@
 			<div v-bind:style="{width: !panelShow ? (leftWidth || 5) + 'rem' : '0'}" class="search-left">
 				<slot></slot>
 			</div>
+            <div class="returnBtn" :style="{display: panelShow ? 'block' : 'none'}" @click="hide"><i class="iconfont icon-fanhui"></i></div>
 			<div class="search-input">
 				<form action="#" onSubmit="return false">
 					<i class="iconfont icon-sousuo"></i>
@@ -11,7 +12,7 @@
 						v-on:focus.self="show" placeholder="小区、商圈、地铁">
 				</form>
 			</div>
-			<div :style="{width: panelShow ? '3rem' : '0'}"  @click="hide" class="search-cannel">取消</div>
+			<div :style="{width: panelShow ? '3rem' : '0'}"  class="searchBtn">搜索</div>
 			<search-panel
 				:style="{animation: animation + ' .6s forwards'}"
 				ref="panel"></search-panel>

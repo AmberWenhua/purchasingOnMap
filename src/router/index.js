@@ -4,15 +4,27 @@ import home from '@/components/home'
 import login from '@/components/login'
 import register from '@/components/register'
 import forgetpassword from '@/components/forgetpassword'
+import meeting from '@/components/meeting'
+import message from '@/components/message'
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
     {
-      path: '/',
+      path: '/home',
       name: 'home',
       component: home
+    },
+    {
+      path:'/meeting',
+      name:'meeting',
+      component:meeting,
+    },
+    {
+      path:'/message',
+      name:'message',
+      component:message,
     },
     {
       path:'/login',
@@ -28,6 +40,10 @@ export default new Router({
       path:'/forgetpassword',
       name:'forgetpassword',
       component:forgetpassword,
+    },
+    {
+      path: '/',
+      component: home
     },
 
   ]
