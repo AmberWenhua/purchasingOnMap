@@ -1,0 +1,215 @@
+*{
+	padding:0;margin: 0;
+}
+ul{list-style: none}
+input,button,select,textarea{outline:none;padding:0;margin:0;border:none;}
+textarea{resize:none}
+
+.header{
+	height:50px ;
+	padding: 0 12px;
+	text-align: center;
+	line-height: 50px;
+	background-color: #ffffff;
+	border-bottom: 1px solid #d6d7dc;
+	box-sizing: border-box;
+	position: fixed;
+	top:0;
+	left:0;
+	right: 0;
+}
+.header .title{
+	font-size: 18px;
+	color: #ea5404;
+	font-weight: bold;
+}
+.return{
+	float: left;
+	display: block;
+	height:50px ;
+	width: 20px;
+	background: url("../images/login/nav_back_icon@2x.png") no-repeat 0 center;
+	background-size:12px;
+}
+.all-box{
+	position: fixed;
+	top:0; left:0;right: 0;bottom: 0;
+	background: #efeff4;
+	overflow-y: auto;
+}
+.contain-box{
+	background: #efeff4;
+	position: fixed;
+	top:50px;
+	bottom:0;
+	left:0;
+	right:0;
+	overflow-y: auto;
+}
+.contain-bottom{
+	bottom:56px;
+}
+.btn-basic{
+	border: 1px solid #c7c7c7;
+	width: 100%;
+	height:100% ;
+	background-color: #c7c7c7;
+	line-height: 25px;
+	text-align: center;
+	color: #646464;
+	text-indent:0;
+	border-radius: 5px;
+	font-size: 20px;
+}
+.btn-orange{
+	background-color: #ea5404;
+	color: #ffffff;
+}
+.display{
+	display: none;
+}
+.playblock{
+	display: block;
+}
+.playnone{
+	display: none;
+}
+.page-box{
+	position: fixed; 
+	top:0;
+	left: 0;
+	right:0;
+	bottom: 56px;
+	background: #efeff4;
+	overflow-y: auto;
+	text-align: center;
+	display: -webkit-flex; /* Safari */
+    display: flex;
+    flex-direction:column;
+}
+.bg{
+	background: #efeff4;
+}
+.bg2{
+	background: #000000;
+}
+.footer{
+	position: fixed;
+	bottom: 0;
+	left:0;
+	right: 0;
+}
+.footer-nav{
+	height: 50px;
+	background-color: #ffffff;
+	list-style: none;
+	padding-top: 6px;
+}
+.fist-li{
+	margin-top: 6px;
+}
+.display-flex{
+	display: flex;
+}
+
+.clearfloat:after{
+	content: "";
+	display: block;
+	height:0;
+	visibility: hidden;
+	clear: both;
+}
+
+
+/*全屏按钮点击确认样式*/
+.popup{
+	width:274px;
+	text-align: center;
+	border-radius: 8px;
+	background: #ffffff;
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-top:-55px;/*大盒子高的一半*/
+	margin-left:-137px;/*大盒子宽的一半*/
+}
+.popup-li{
+	height:30px;
+}
+.popup-li1{
+	height: 64px;
+	line-height: 64px;
+	border-bottom:1px solid #e1e1e1 ;
+}
+.popup-li2{
+	height: 45px;
+	line-height: 45px;
+	color: #eb642b;
+}
+.popup-li2-list1{
+	width: 50%;
+	float: left;
+	color: #000;
+}
+.popup-li2-list2{
+	width: 50%;
+	float: left;
+}
+
+/*中心部分定死*/
+.all-order{
+	margin-top: 60px;
+	position: relative;
+}
+
+.booking-house{
+	background: #000000;
+}
+.welcome-page{
+	background: #f5eeea;
+}
+
+/* 字体图标 */
+@font-face {font-family: "iconfont";
+    src: url(../font/iconfont.be7bff6a.eot); /* IE9*/
+    src: url(../font/iconfont.be7bff6a.eot#iefix) format('embedded-opentype'), 
+    url(../font/iconfont.7bb09887.woff) format('woff'), 
+    url(../font/iconfont.0aa463b0.ttf) format('truetype'), 
+    url(../font/iconfont.cf1112d3.svg#iconfont) format('svg'); /* iOS 4.1- */
+  }
+  
+  .iconfont {
+    font-family:"iconfont" !important;
+    font-size:16px;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-wode:before { content: "\E600"; }
+  
+  .icon-yue:before { content: "\E7DA"; }
+  
+  .icon-ditu:before { content: "\E634"; }
+  
+  .icon-icon4:before { content: "\E635"; }
+  
+  .icon-meiyuefangzu:before { content: "\E63A"; }
+  
+  .icon-hert:before { content: "\E616"; }
+  
+  .icon-ditie:before { content: "\E608"; }
+  
+  .icon-sousuo:before { content: "\E651"; }
+  
+  .icon-xiala:before { content: "\E65C"; }
+  
+  .icon-zufang:before { content: "\E68D"; }
+  
+  .icon-zufang1:before { content: "\E613"; }
+  
+  .icon-fanhui:before { content: "\E601"; }
+  
+  .icon-hezu:before { content: "\E8ED"; }
+  
+  .icon-baoxiu:before { content: "\E64A"; }
