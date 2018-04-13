@@ -1,5 +1,5 @@
 <template>
-  <div>message
+  <div>my
     <footer-nav></footer-nav>
   </div>
   
@@ -8,7 +8,7 @@
 import footer from './home/footer.vue'
 
 export default {
-  name:'message',
+  name:'my',
   components:{
     "footer-nav":footer
   },

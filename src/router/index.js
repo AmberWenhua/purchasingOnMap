@@ -6,6 +6,7 @@ import register from '@/components/register'
 import forgetpassword from '@/components/forgetpassword'
 import meeting from '@/components/meeting'
 import message from '@/components/message'
+import my from '@/components/my'
 
 Vue.use(Router)
 
@@ -25,6 +26,11 @@ export default new Router({
       path:'/message',
       name:'message',
       component:message,
+    },
+    {
+      path:'/my',
+      name:'my',
+      component:my,
     },
     {
       path:'/login',
