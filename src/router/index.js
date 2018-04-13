@@ -5,6 +5,7 @@ import login from '@/components/login'
 import register from '@/components/register'
 import forgetpassword from '@/components/forgetpassword'
 import meeting from '@/components/meeting'
+import announce from '@/components/announce'
 import message from '@/components/message'
 import my from '@/components/my'
 
@@ -21,6 +22,11 @@ export default new Router({
       path:'/meeting',
       name:'meeting',
       component:meeting,
+    },
+    {
+      path:'/announce',
+      name:'announce',
+      component:announce,
     },
     {
       path:'/message',

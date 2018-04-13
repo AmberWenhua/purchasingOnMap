@@ -2,29 +2,19 @@
     <!--底部-->
 	<footer class="footer">
 		<ul class="footer-nav">
-			<router-link to="/home">
-				<li class="btnclick">
-					<i class="icon-footer icon-footer1" :class="{'icon-footer-click1': !is}" ></i><span class="click-color">首页</span>
+			<a to="" v-for="(item,index) in list" @click="routeTo(item)">
+				<li class="btnclick" v-if="index === 2">
+					<i class="icon-footer-middle">
+						<img :src="item.imgUrl" class="icon-footer-middle"></img>
+					</i>
 				</li>
-			</router-link>
-			<router-link to="/meeting">
-				<li class="btnclick" >
-					<i class="icon-footer icon-footer2 icon-footer-click2"></i><span class="click-color">预约</span>
+				<li class="btnclick" v-else>
+					<i class="icon-footer">	
+						<img :src="item.imgUrl" class="icon-footer"></img>
+					</i>
+					<span class="click-color">{{item.name}}</span>
 				</li>
-			</router-link>
-			<li class="btnclick" >
-				<i class="icon-footer icon-footer3"></i>
-			</li>
-			<router-link to="/message">
-				<li class="btnclick">
-					<i class="icon-footer icon-footer4 icon-footer-click4"></i><span class="click-color">信息</span>
-				</li>
-			</router-link>
-			<router-link to="/my">
-				<li class="btnclick">
-					<i class="icon-footer icon-footer5 icon-footer-click5"></i><span class="click-color">我</span>
-				</li>
-			</router-link>
+			</a>
 		</ul>
 	</footer>
 </template>
@@ -34,17 +24,55 @@ export default {
 	name:"footer",
 	data(){
       return {
-		  is : false
-	  }  
+		  isClick : false,
+		  currentLink: '',
+		  list: [
+					{
+						link:'/home',
+						imgUrl:require('../../assets/images/footer-nav/bottom_nor_icon04@2x.png'),
+						changeUrl:require('../../assets/images/footer-nav/bottom_press_icon04@2x.png'),
+						name:'首页'
+					},
+					{
+						link:'/meeting',
+						imgUrl:require('../../assets/images/footer-nav/bottom_nor_icon03@2x.png'),
+						changeUrl:require('../../assets/images/footer-nav/bottom_press_icon03@2x.png'),
+						name:'预约'
+						},
+					{
+						link:'/announce',
+						imgUrl:require('../../assets/images/footer-nav/bottom_icon05@2x.png'),
+						name:''},
+					{
+						link:'/message',
+						imgUrl:require('../../assets/images/footer-nav/bottom_nor_icon02@2x.png'),
+						changeUrl:require('../../assets/images/footer-nav/bottom_press_icon02@2x.png'),
+						name:'信息'},
+					{
+						link:'/my',
+						imgUrl:require('../../assets/images/footer-nav/bottom_nor_icon01@2x.png'),
+						changeUrl:require('../../assets/images/footer-nav/bottom_press_icon01@2x.png'),
+						name:'我'
+						},
+				],
+	  }
     },
 	methods:{
-	}
+		routeTo:function(item){
+			this.$router.push(item.link);
+			console.log(item.link);
+			this.isClick = true;
+		}
+	},
   
 }
 </script>
 
 <style>
 @import '../../assets/css/home/footer.css';
+.clickColor{
+	color: orangered;
+}
 </style>
 
 
