@@ -5,9 +5,10 @@
 
 # 下载文件
 * 下载
+
     ```
-    https://github.com/AmberWenhua/purchasingOnMap.git
-     ```
+    https://github.com/AmberWenhua/mapBuyHouse.git
+    ```
 
 * 进入项目文件夹, 安装依赖
 
