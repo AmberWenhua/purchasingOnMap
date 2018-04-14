@@ -1,30 +1,42 @@
-# test
+#地图找房项目
+* 主要为不同身份用户提供不同操作，服务方可以发布房源和接受需求方的预约看房请求。 
+* 需求方可以进行在地图上进行房源资源搜索、发布自己的需求、预约看房，接收信息通知，个人资料，历史交易，房源收藏等。
 
-> A Vue.js project
 
-## Build Setup
+# 下载文件
+* 下载
 
-``` bash
-# install dependencies
-npm install
+    ```
+    https://github.com/AmberWenhua/mapBuyHouse.git
+    ```
 
-# serve with hot reload at localhost:8080
-npm run dev
+* 进入项目文件夹, 安装依赖
 
-# build for production with minification
-npm run build
+  如果没有安装cnpm, 建议安装 `cnpm`，方法如下
+ 
+    ```
+    npm install -g cnpm --registry=https://registry.npm.taobao.org
+     ```
+   
+    cnpm安装成功后，执行以下操作
+     ```
+    cnpm install 
+    ```
 
-# build for production and view the bundle analyzer report
-npm run build --report
+# 启动
 
-# run unit tests
-npm run unit
+* 启动服务
+    ```
+    npm start
+     ```
 
-# run e2e tests
-npm run e2e
-
-# run all tests
-npm test
-```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+* 在浏览器地址栏访问
+ 	```
+	 localhost:8090
+	```
+# 所用技术
+* css/css3
+* html/html5
+* javascript
+* jQuery
+* Vue
