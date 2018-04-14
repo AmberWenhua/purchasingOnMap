@@ -1,0 +1,32 @@
+.tools-nav{
+    position: absolute;
+    top:4.5rem;
+    right: 1.2rem;
+    // height: 10rem;
+    width: 3.5rem;
+    // border: 1px solid red;
+}
+.tool{
+    height: 3.5rem;
+    width: 3.5rem;
+    background-color: #fff;
+    // line-height: 2rem;
+    border:1px solid #ddd;
+    box-sizing: border-box;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    // box-shadow: ;
+    margin-bottom: .3rem;
+}
+.tool .iconfont{
+    flex: 2;
+    line-height: 2.2rem;
+    font-size: 20px;
+}
+.tool-name{
+    flex: 1;
+    font-size: 12px;
+    line-height: .8rem;
+}
+

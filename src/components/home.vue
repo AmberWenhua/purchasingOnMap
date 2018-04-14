@@ -8,6 +8,7 @@
       </header-search>
       <div class="page-box" :style="{ opacity : this.shadow ? 0.1 : 1}" >
         <bmap></bmap>
+        <tools></tools>
         <footer-nav></footer-nav>
       </div>
   </div>
@@ -17,6 +18,7 @@
 import header from './home/header.vue'
 import bmap from './home/map.vue'
 import footer from './home/footer.vue'
+import tools from './tools/tools.vue'
 
 export default {
   name: 'home',
@@ -28,7 +30,8 @@ export default {
   components:{
     "header-search": header,
     "bmap": bmap,
-    "footer-nav":footer
+    "footer-nav":footer,
+    'tools':tools,
   },
   methods:{
     result : function(data){
