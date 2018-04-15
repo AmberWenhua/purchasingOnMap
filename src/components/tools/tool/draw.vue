@@ -1,15 +1,35 @@
 <template>
-    <li class="tool">
+    <li class="tool" :class="{'c' : isClick}" @click="cc">
         <i class="iconfont icon-bi"></i>
-        <span class="tool-name">画圈找房</span>
+        <span class="tool-name">画圈</span>
     </li>
 </template>
 <script>
+import map from '../../home/map.vue'
 export default {
-  name:'bi'
+  name:'bi',
+  data(){
+      return {
+          isClick: false,
+      }
+  },
+  mounted(){
+      var myDrag = new BMapLib.RectangleZoom(map);
+      myDrag.open();
+  },
+  methods:{
+      cc:function(){
+          this.isClick = !this.isClick;
+      }
+  }
+
 }
 </script>
 <style>
 @import '../../../assets/css/tools/tools.scss';
+.c{
+    color: #FFE4B5;
+     box-shadow: 3px 1px 5px #888888;
+}
 </style>
 

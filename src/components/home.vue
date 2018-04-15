@@ -10,6 +10,7 @@
         <bmap></bmap>
         <tools></tools>
         <footer-nav></footer-nav>
+        <popFooter v-on:popShow = "result1" :style="{ top : this.isClick ?  '50rem' : '100rem'}" ></popFooter>
       </div>
   </div>
 </template>
@@ -19,12 +20,14 @@ import header from './home/header.vue'
 import bmap from './home/map.vue'
 import footer from './home/footer.vue'
 import tools from './tools/tools.vue'
+import popFooter from './home/pop-footer.vue'
 
 export default {
   name: 'home',
   data(){
     return {
-      shadow : ''
+      shadow : '',
+      isClick:'',
     }
   },
   components:{
@@ -32,11 +35,15 @@ export default {
     "bmap": bmap,
     "footer-nav":footer,
     'tools':tools,
+    'popFooter':popFooter,
   },
   methods:{
     result : function(data){
       this.shadow = data;
     },
+    result1:function(data){
+      this.isClick = data;
+    }
   }
 }
 </script>
