@@ -1,7 +1,7 @@
 <template>
 <div>
      <header class="header clearfloat">
-        <i class="return btnclick" id="no-login"></i>
+        <router-link tag="i" class="return btnclick" to="/home"></router-link>
         <span class="title">登录</span>
     </header>
     
