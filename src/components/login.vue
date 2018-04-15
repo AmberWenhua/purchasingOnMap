@@ -1,12 +1,12 @@
 <template>
 <div>
      <header class="header clearfloat">
-        <i class="return btnclick" id="no-login" data-target-page="home" data-target-doc="index"></i>
+        <i class="return btnclick" id="no-login"></i>
         <span class="title">登录</span>
     </header>
     
-    <div class="contain-box" id="login">
-        <ul class="login_contain" id="form-login" data-target-id="btn-login">
+    <div class="contain-box">
+        <ul class="login_contain">
             <li class="label-li1 clearfloat">
                 <div class="basic-label id_bg">账号：</div>
                 <div class="basic-inputbox">
@@ -21,11 +21,11 @@
             </li>
         </ul>
         <div class="login-btn">
-            <button id="btn-login" class="btn-basic btnclick" data-target-page="my" data-target-doc="my" disabled>登陆</button>
+            <button id="btn-login" class="btn-basic btnclick" disabled>登陆</button>
         </div>
         <div class="login-btn login_btn2">
-            <span class="enroll btnclick" data-target-page="register" data-target-doc="login">注册</span>
-            <span class="forgert-pass btnclick" data-target-page="forgetpassword" data-target-doc="login">忘记密码?</span>
+            <router-link class="enroll btnclick" tag="span" to="/register">注册</router-link>
+            <router-link class="forgert-pass btnclick" tag="span" to="/forgetpassword">忘记密码?</router-link>
         </div>
     </div>
 </div>

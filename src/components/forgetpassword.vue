@@ -1,9 +1,9 @@
 <template>
   <div>
      <header class="header clearfloat">
-        <i class="return btnclick" data-target-page="login" data-target-doc="login"></i>
+        <i class="return btnclick"></i>
         <span class="title ">忘记密码</span>
-        <span class="return-login btnclick" data-target-page="login" data-target-doc="login">登录</span>
+        <router-link class="return-login btnclick" tag="span" to="/login">登录</router-link>
     </header>
     <div class="contain-box" id="forget">
 
@@ -38,7 +38,7 @@
         </ul>
 
         <div class="login-btn">
-            <button class="btn-basic btnclick" data-target-page="login" data-target-doc="login">确定</button>
+            <button class="btn-basic btnclick">确定</button>
         </div>
     </div> 
   </div>
