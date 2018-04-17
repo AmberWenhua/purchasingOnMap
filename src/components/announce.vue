@@ -15,7 +15,7 @@ export default {
   name:'announce',
 }
 </script>
-<style>
+<style scoped>
 @import '../assets/css/public.css';
 @import '../assets/css/annInfo.css';
 </style>

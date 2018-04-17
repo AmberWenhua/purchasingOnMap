@@ -5,7 +5,7 @@
     </li>
 </template>
 <script>
-import map from '../../home/map.vue'
+
 export default {
   name:'bi',
   data(){
@@ -14,8 +14,6 @@ export default {
       }
   },
   mounted(){
-      var myDrag = new BMapLib.RectangleZoom(map);
-      myDrag.open();
   },
   methods:{
       cc:function(){

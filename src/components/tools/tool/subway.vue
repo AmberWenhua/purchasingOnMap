@@ -1,6 +1,6 @@
 <template>
 <div>
-    <li class="tool" @click="show">
+    <li class="tool">
         <i class="iconfont icon-ditie" style="font-size:23px;"></i>
         <span class="tool-name">地铁</span>
     </li>
@@ -15,10 +15,6 @@ export default {
       }
   },
   methods:{
-      show(){
-          this.popShow = true;
-          this.$emit("showPanel",this.panelShow);
-      }
   }
 }
 </script>

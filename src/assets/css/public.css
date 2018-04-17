@@ -81,7 +81,6 @@ textarea{resize:none}
 	right:0;
 	bottom: 56px;
 	background: #efeff4;
-	overflow-y: auto;
 	text-align: center;
 	display: -webkit-flex; /* Safari */
     display: flex;
