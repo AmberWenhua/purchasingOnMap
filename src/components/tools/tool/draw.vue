@@ -5,6 +5,7 @@
     </li>
 </template>
 <script>
+import DistanceTool from 'bmaplib.distancetool'
 
 export default {
   name:'bi',
